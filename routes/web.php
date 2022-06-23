@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// route home
 Route::get('/', function () {
     $data = [
         'users' => [
@@ -40,3 +41,8 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+// route about
+Route::get('about', function () {
+    return view('about');
+})->name('about-us');
