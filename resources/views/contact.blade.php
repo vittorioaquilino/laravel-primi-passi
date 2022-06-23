@@ -15,15 +15,9 @@
             <li><a href="{{ route('contact-us') }}">Contact</a></li>
         </ul>
     </header>
+    
     <main>
-        <h3>Lista utenti:</h3>
-        <ul>
-            @foreach ($users as $user)
-                <li class="user-list">
-                    <small>{{ $user['name'] }} {{ $user['surname'] }}</small>
-                </li>
-            @endforeach
-        </ul>
+        <h3>Sono la pagina contact</h3>
     </main>
 </body>
 </html>
