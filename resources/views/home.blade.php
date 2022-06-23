@@ -7,7 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>hello world</h1>
+    <header>
+        <ul>
+            <li><a href="{{ route('home') }}">Home</a></li>
+        </ul>
+    </header>
+    <main>
+        <h3>Lista utenti:</h3>
+        <ul>
+            @foreach ($users as $item)
+                <li>
+                    <small>{{ $item['name'] }} {{ $item['surname'] }}</small>
+                </li>
+            @endforeach
+        </ul>
+    </main>
 </body>
 </html>
